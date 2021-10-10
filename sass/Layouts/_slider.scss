@@ -1,0 +1,42 @@
+.background_cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.slider{
+    border: 1px solid transparent;
+    position: relative;
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../images/team6.jpg);
+    @extend .background_cover;
+    background-attachment: fixed; 
+
+    .container{
+        .slider__list{
+            margin-top: 12rem;
+
+            .slider__left{
+                margin-top: 10rem ;
+                >h1{
+                    @include styleText(5rem, $fw-3, $color-title);
+                    margin-bottom: 2rem;     
+                    line-height: 5.75rem;              
+                }
+                >p{
+                    @include styleText(2rem, $fw-1, $color-title);
+                    line-height: 2.8rem;
+                    max-width: 45rem;
+                    margin-bottom: 4rem;
+                }
+                >a{
+                    @include styleButton(#fff, 1.5rem, 4rem, 1px solid $color-red, 5px);
+                    @include styleText(1.4rem, $fw-3, $color-red);
+                    transition: all 0.3s;
+                    &:hover{
+                        background-color: $color-red;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.master__titleSmall{
+    @include styleText(1.6rem, $fw-3, $color-red);
+    line-height: 2rem;
+    margin-bottom: 1rem;   
+}
+.master__titleBig{
+    @include styleText(4.6rem, $fw-3, $color-title);
+}
+.master__text{
+    @include styleText(1.6rem, $fw-1, $color-text);
+    line-height: 22.5px;
+    margin-top: 1rem;
+}

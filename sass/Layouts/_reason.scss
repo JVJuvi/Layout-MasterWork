@@ -1,0 +1,42 @@
+.reason{
+    border: 1px solid transparent;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    text-align: center;
+
+    .reason__top{
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+
+    .reason__bottom{
+        .reason__item{
+            .reason__detail{
+                padding: 3.5rem 1.8rem;
+                background-color: $color-light-bg-color;
+                border-radius: 5px;
+                transition: all 0.3s;    
+                >a{
+                    display: block;
+                    >h1{
+                        @include styleText(2.6rem, $fw-3, $color-title);
+                        line-height: 35px;
+                        margin-top: 1rem;
+                    } 
+                    >p{
+                        @include styleText(1.6rem, $fw-1, $color-text);
+                        margin-top: 1.5rem;
+                        line-height: 24.5px;
+                    }         
+                }
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: $color-card-hover-shadow;
+                    transform: translateY(-10px);              
+                }         
+            }
+        }
+    }
+
+}

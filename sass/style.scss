@@ -1,0 +1,35 @@
+//Helper
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+//Vendors
+
+//Base
+@import "./Base/reset";
+
+// Componets
+@import "./Components/title";
+
+//Layouts
+@import "./Layouts/header";
+@import "./Layouts/slider";
+@import "./Layouts/reason";
+@import "./Layouts/about";
+@import "./Layouts/sta";
+@import "./Layouts/trusted";
+@import "./Layouts/solution";
+//Pages
+
+//Themes
+
+//DardMode
+
+
+
+
+
+
+@media (min-width: 1280px){
+.container {
+    max-width: 1200px;
+}
+}

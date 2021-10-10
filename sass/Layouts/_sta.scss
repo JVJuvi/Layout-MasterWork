@@ -1,0 +1,29 @@
+.sta{
+    border: 1px solid transparent;
+
+    .sta__list{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        .sta__item{
+            border: 1px solid #eee;
+            border-radius: 5px;
+            box-shadow: $color-card-shadow;
+            padding: 3rem;
+            transition: all 0.3s;
+            >h3{
+                @include styleText(1.6rem, $fw-3, $color-title);
+                line-height: 2.45rem;
+            }
+            >h1{
+                @include styleText(5rem, $fw-3, $color-red);
+            }
+            >p{
+                @include styleText(1.6rem, $fw-1, $color-text);
+            }
+            &:hover{
+                box-shadow: $color-card-hover-shadow;
+            }       
+        }
+    }
+}

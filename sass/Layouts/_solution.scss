@@ -1,0 +1,67 @@
+.solution{
+    border: 1px solid transparent;
+    margin-top: 5rem;
+
+    .solution__top{
+        text-align: center;
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    .solution__bottom{
+        .solution__item{
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            position: relative;     
+            >a{
+                >img{
+                    width: 100%;
+                }
+            }
+            >a{
+                >p{
+                    @include styleText(1.8rem, $fw-3, #fff);
+                    position: absolute;
+                    top: 0;
+                    right: 0;     
+                    display: inline-block;
+                    background-color: var(--primary); //color-red
+                    padding: 1.5rem;        
+                }
+            }
+            .solution__content{
+                padding: 2.25rem;
+                .solution__red{
+                    display: inline-block;
+                    background: rgba(238, 97, 120, 0.2);
+                    color: $color-red;
+                    @include styleText(1.3rem, $fw-3, $color-red);
+                    padding: 0.7rem 2rem;
+                    border-radius: 1.7rem;     
+                }
+                .solution__green{
+                    display: inline-block;
+                    background: rgba(0, 128, 0, 0.2);
+                    color: $color-red;
+                    @include styleText(1.3rem, $fw-3, #008000);
+                    padding: 0.7rem 2rem;
+                    border-radius: 1.7rem;        
+                }
+                .solution__blue{
+                    display: inline-block;
+                    background: rgba(0, 0, 255, 0.2);
+                    color: $color-red;
+                    @include styleText(1.3rem, $fw-3, #0000ff);
+                    padding: 0.7rem 2rem;
+                    border-radius: 1.7rem;         
+                }
+                >h3{
+                    >a{
+                        display: block;
+                        @include styleText(2.2rem, $fw-3, $color-red);
+                    }
+                }
+        }
+    }
+}
